@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+
+  --color-heading: var(--heading);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+
+  --color-accent: var(--accent);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-danger-hover: var(--danger-hover);
+
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+
+  --color-info-background: var(--info-background);
+
+  --breakpoint-xs: 350px;
+}
+
+
+/* Light Theme Default */
+
+:root {
+  --background: #eaf6ff;
+  --surface: #f8fcff;
+  --surface-secondary: #e1f2fc;
+
+  --heading: #102a43;
+  --text: #243b53;
+  --muted: #627d98;
+
+  --border: #c7dfef;
+
+  --primary: #3b82c4;
+  --primary-hover: #2569a6;
+
+  --secondary: #d8edf9;
+  --secondary-hover: #c5e3f3;
+
+  --accent: #62b6e8;
+
+  --success: #3a9d7c;
+  --warning: #d99a3d;
+  --danger: #d65a5a;
+  --danger-hover: #c74444;
+
+  --card: #eef5f9;
+  --card-hover: #e8f1f6;
+
+  --info-background: #d7edf9;
+}
+
+
+/* Dark Theme — temporary */
+
+
+/* Dark Theme */
+.dark {
+  --background: #121212;
+  --surface: #1a1a1a;
+  --surface-secondary: #282828;
+
+  --heading: #e8f4fb;
+  --text: #cbdde8;
+  --muted: #8fa8b8;
+
+  --border: #353535;
+
+  --primary: #4f9ed1;
+  --primary-hover: #69b1df;
+
+  --secondary: #2a2a2a;
+  --secondary-hover: #363636;
+
+  --accent: #63b9e8;
+
+  --success: #4fa886;
+  --warning: #d5a052;
+
+  --danger: #d66b6b;
+  --danger-hover: #e07b7b;
+
+  --card: #222222;
+  --card-hover: #292929;
+
+  --info-background: #1f1f1f;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
