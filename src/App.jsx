@@ -2,7 +2,7 @@ import Navbar from './components/layouts/Navbar'
 import Sidebar from './components/layouts/Sidebar'
 import GalleryLayout from './components/gallery/GalleryLayout'
 import InfoSection from './components/sections/InfoSection'
-import Footer from './components/layouts/footer'
+import Footer from './components/layouts/Footer'
 
 function App() {
 
