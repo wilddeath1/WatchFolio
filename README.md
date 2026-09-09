@@ -6,7 +6,7 @@ WatchFolio is a personal watch discovery and reference platform created to keep 
 
 The project started as a frontend learning project using static JavaScript data and was later connected to a **Supabase PostgreSQL database**, allowing watch data to be fetched dynamically instead of being hard-coded into the application.
 
-🔗 **Live Demo:** https://wilddeath1.github.io/WatchFolio
+🔗 **Live Demo:** https://wilddeath1.github.io/WatchFolio/
 
 ## ✨ Features
 
