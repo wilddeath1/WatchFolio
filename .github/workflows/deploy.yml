@@ -28,10 +28,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: |
-          echo "URL present: $([[ -n "$VITE_SUPABASE_URL" ]] && echo yes || echo no)"
-          echo "KEY present: $([[ -n "$VITE_SUPABASE_PUBLISHABLE_KEY" ]] && echo yes || echo no)"
-          npm run build
+        run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
