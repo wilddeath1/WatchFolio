@@ -43,7 +43,7 @@ const GalleryLayout = () => {
     return (
         <>
             {/* Viewer Overlay */}
-            {isViewing && <WatchViewer viewingWatch={viewingWatch} setIsViewing={setIsViewing} />}
+            {isViewing && <WatchViewer viewingWatch={viewingWatch} setIsViewing={setIsViewing} watches={watches} setViewingId={setViewingId} />}
 
 
             {/* Gallery */}

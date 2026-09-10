@@ -1,5 +1,8 @@
 
-const FamilySection = () => {
+const FamilySection = ({ viewingWatch, watches, setViewingId, setMediaIndex, setMediaType }) => {
+    const familyWatches = watches.filter((watch) =>
+        watch.familyId === viewingWatch.familyId
+    )
     return (
         <>
             <div className="px-2 pt-3">
@@ -7,28 +10,41 @@ const FamilySection = () => {
                 <div className="border-t border-border pt-4">
 
                     <h3 className="text-lg font-semibold text-heading">
-                        More from this family
+                        More Variants of {viewingWatch.familyId} family
                     </h3>
 
                     <div className="flex gap-4 mt-3">
 
-                        <div className="h-20 w-24 rounded-xl bg-surface-secondary flex items-center justify-center text-sm text-muted">
-                            Variant
-                        </div>
+                        {familyWatches.map((elem) => {
 
-                        <div className="h-20 w-24 rounded-xl bg-surface-secondary flex items-center justify-center text-sm text-muted">
-                            Variant
-                        </div>
+                            return (< div key={elem.id} className={`h-20 w-24 rounded-xl bg-surface-secondary hover:bg-secondary-hover flex items-center justify-center text-sm text-muted cursor-pointer
+                                 ${elem.id === viewingWatch.id ? "border border-primary" : "border-none"}`}
+                                onClick={() => { setViewingId(elem.id); setMediaIndex(0); setMediaType("irl") }
+                                } >
 
-                        <div className="h-20 w-24 rounded-xl bg-surface-secondary flex items-center justify-center text-sm text-muted">
-                            Variant
-                        </div>
+                                <div className="relative h-3/4 w-full">
+
+
+                                    <img
+                                        src={elem.variantImages[0]}
+                                        alt={elem.model}
+                                        className="absolute inset-0 h-full w-full object-contain"
+                                    />
+
+
+
+
+                                </div>
+
+                            </div>)
+
+                        })}
 
                     </div>
 
                 </div>
 
-            </div>
+            </div >
         </>
     );
 };

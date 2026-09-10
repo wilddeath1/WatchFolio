@@ -5,7 +5,7 @@ import MediaControls from "./MediaControls";
 import FamilySection from "./FamilySection";
 import { useState } from "react";
 
-const WatchViewer = ({ viewingWatch, setIsViewing }) => {
+const WatchViewer = ({ viewingWatch, setIsViewing, watches, setViewingId }) => {
   const [mediaType, setMediaType] = useState("irl");
   const [mediaIndex, setMediaIndex] = useState(0);
 
@@ -44,7 +44,13 @@ const WatchViewer = ({ viewingWatch, setIsViewing }) => {
         </div>
 
         <div className="shrink-0">
-          <FamilySection />
+          <FamilySection
+            viewingWatch={viewingWatch}
+            watches={watches}
+            setViewingId={setViewingId}
+            setMediaIndex={setMediaIndex}
+            setMediaType={setMediaType}
+          />
         </div>
 
       </div>
