@@ -15,7 +15,7 @@ const GalleryGrid = (props) => {
 
                 {
                     props.isLoading
-                        ? Array.from({ length: 8 }).map((_, index) => (
+                        ? Array.from({ length: 10 }).map((_, index) => (
                             <GallerySkeleton key={index} />
                         ))
                         : props.watches.map((elem) => {

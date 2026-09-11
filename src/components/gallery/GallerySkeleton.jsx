@@ -15,21 +15,21 @@ const GallerySkeleton = () => {
                 <div className="w-full flex flex-col justify-between p-1 animate-pulse">
 
                     <div className="flex gap-1 flex-col">
-                        <p className="text-muted xl:text-sm bg-secondary w-25 h-5"></p>
-                        <h3 className="text-heading xl:text-2xl font-medium truncate sm:mb-4 bg-secondary w-45 h-7"></h3>
+                        <p className="mt-2 bg-secondary w-2/5 h-5"></p>
+                        <p className="mb-2 bg-secondary w-7/10 h-5"></p>
 
                     </div>
 
-                    <div className="flex justify-between ">
+                    <div className="flex">
 
-                        <div className="flex gap-1 flex-col">
-                            <span className="text-muted text-[9px] xl:text-sm bg-secondary w-18 h-5"></span>
-                            <p className="text-heading text-[9px] xl:text-xl font-medium bg-secondary w-25 h-5"></p>
+                        <div className="flex gap-1 flex-col w-1/2">
+                            <span className=" bg-secondary w-1/5 h-5"></span>
+                            <p className="bg-secondary w-4/5 h-5"></p>
                         </div>
 
-                        <div className="flex gap-1 flex-col">
-                            <p className="text-muted text-[9px] xl:text-sm text-right bg-secondary w-28 h-5"></p>
-                            <p className="text-text text-[9px] xl:text-sm text-right bg-secondary w-25 h-5"></p>
+                        <div className="flex gap-1 items-end flex-col w-1/2">
+                            <p className="bg-secondary w-9/10 h-5"></p>
+                            <p className="bg-secondary w-3/5 h-5"></p>
                         </div>
 
                     </div>
