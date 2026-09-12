@@ -23,13 +23,6 @@ const InfoGrid = ({ viewingWatch, className }) => {
                 <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-sm">
 
                     <div>
-                        <p className="text-muted">Brand</p>
-                        <p className="text-text font-medium">
-                            {viewingWatch?.brand}
-                        </p>
-                    </div>
-
-                    <div>
                         <p className="text-muted">Model</p>
                         <p className="text-text font-medium">
                             {viewingWatch?.model}
@@ -37,44 +30,54 @@ const InfoGrid = ({ viewingWatch, className }) => {
                     </div>
 
                     <div>
-                        <p className="text-muted">Size</p>
-                        <p className="text-text font-medium">
+                        <p className="text-muted truncate">Dail Color</p>
+                        <p className="text-text font-medium truncate">
+                            {viewingWatch?.dialColor
+                                ?.replace(/^\{|\}$/g, "")
+                                .split(",")
+                                .join(", ")}
+                        </p>
+                    </div>
+
+                    <div>
+                        <p className="text-muted truncate">Size</p>
+                        <p className="text-text font-medium truncate">
                             {viewingWatch?.size}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-muted">Glass</p>
-                        <p className="text-text font-medium">
-                            Mineral
+                        <p className="text-muted truncate">Glass</p>
+                        <p className="text-text font-medium truncate">
+                            {viewingWatch?.glass}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-muted">Case</p>
-                        <p className="text-text font-medium">
-                            Stainless Steel
+                        <p className="text-muted truncate">Case</p>
+                        <p className="text-text font-medium truncate">
+                            {viewingWatch?.case}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-muted">Bracelet</p>
-                        <p className="text-text font-medium">
-                            Stainless Steel
+                        <p className="text-muted truncate">Bracelet</p>
+                        <p className="text-text font-medium truncate">
+                            {viewingWatch?.bracelet}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-muted">Movement</p>
-                        <p className="text-text font-medium">
-                            Quartz
+                        <p className="text-muted truncate">Movement</p>
+                        <p className="text-text font-medium truncate">
+                            {viewingWatch?.movement}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-muted">Water Resistance</p>
-                        <p className="text-text font-medium">
-                            50 m
+                        <p className="text-muted truncate">Water Resistance</p>
+                        <p className="text-text font-medium truncate`">
+                            {viewingWatch?.waterResistance}
                         </p>
                     </div>
 

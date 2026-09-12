@@ -24,8 +24,8 @@ const Navbar = () => {
             </div>
 
             <div className=" w-1/2  px-6 flex items-center justify-end gap-2 ">
-                <button className='rounded-full px-2 py-1 bg-secondary text-text hover:bg-secondary-hover cursor-pointer'><Loader /></button>
-                <button className='rounded-full px-2 py-1 bg-secondary text-text hover:bg-secondary-hover cursor-pointer'><Loader /></button>
+                {/* <button className='rounded-full px-2 py-1 bg-secondary text-text hover:bg-secondary-hover cursor-pointer'><Loader /></button> */}
+
                 <button
                     onClick={toggleTheme}
                     className="rounded-full px-1 py-1 h-8 w-16 bg-secondary text-text hover:bg-secondary-hover cursor-pointer"

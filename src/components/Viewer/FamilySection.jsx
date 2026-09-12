@@ -1,11 +1,11 @@
 
-const FamilySection = ({ viewingWatch, watches, setViewingId, setMediaIndex, setMediaType }) => {
+const FamilySection = ({ viewingWatch, watches, setViewingId, setMediaIndex, setMediaType ,className }) => {
     const familyWatches = watches.filter((watch) =>
         watch.familyId === viewingWatch.familyId
     )
     return (
         <>
-            <div className="px-2 pt-3">
+            <div className={`px-2 pt-3 ${className}`} >
 
                 <div className="border-t border-border pt-4">
 

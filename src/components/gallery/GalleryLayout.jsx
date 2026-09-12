@@ -16,7 +16,8 @@ const GalleryLayout = () => {
     const getWatches = async () => {
         const { data, error } = await supabase
             .from("watches")
-            .select("*");
+            .select("*")
+            .order("id", { ascending: true })
 
         if (error) {
             console.log("the error is", error);
